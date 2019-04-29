@@ -1,6 +1,6 @@
 # Pong-Game
 Add and improve to Pong game already started by Joe. The code cloned from Joe is a work in progress and the game isn't playable.
-The main goal is to make the game run seamlessly with no apparent issues.  
+The main goal is to make the game run seamlessly with no apparent issues. Also change the colors and theme.   
 Then if I have enough time, I also plan to add some neat features that don’t already exist in the code. 
 
 ## Road Map
