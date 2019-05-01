@@ -74,8 +74,8 @@ def paddle_b_down():
 
 # Keyboard binding
 wn.listen()
-wn.onkeypress(paddle_a_up, "q")
-wn.onkeypress(paddle_a_down, "a")
+wn.onkeypress(paddle_a_up, "w")
+wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
