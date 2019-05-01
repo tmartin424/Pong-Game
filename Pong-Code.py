@@ -39,8 +39,8 @@ ball.shape("circle")
 ball.color("lime")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = .2
-ball.dy = .2
+ball.dx = .175
+ball.dy = .175
 
 # Pen
 pen = turtle.Turtle()
@@ -87,23 +87,23 @@ while True:
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
 
-	# Border checking
+	# Y Border checking
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
 
-    if ball.ycor() < -290:
+    elif ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-
-    if ball.xcor() > 390:
+    # X Border Checking
+    if ball.xcor() > 360:
         ball.goto(0, 0)
         ball.dx *= -1
         score_a += 1
         pen.clear()
         pen.write("Player 1: {}  Player 2: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
 
-    if ball.xcor() < -390:
+    elif ball.xcor() < -360:
         ball.goto(0, 0)
         ball.dx *= -1
         score_b += 1
@@ -112,10 +112,14 @@ while True:
 
 
     # Paddle and ball collisions
-    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 45 and ball.ycor() > paddle_b.ycor() -45):
+    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 60 and ball.ycor() > paddle_b.ycor() -60):
         ball.setx(340)
         ball.dx *= -1
 
-    elif (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 45 and ball.ycor() > paddle_a.ycor() -45):
+    elif (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 60 and ball.ycor() > paddle_a.ycor() -60):
+        ball.setx(-340)
+        ball.dx *= -1
+    # Paddle 
+    elif (ball.ycor() < -340 and ball.ycor() > -350) and (ball.xcor() < paddle_a.xcor() + 60 and ball.xcor() > paddle_a.xcor() -60):
         ball.setx(-340)
         ball.dx *= -1
