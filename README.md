@@ -3,6 +3,8 @@ Add and improve to Pong game already started by Joe. The code cloned from Joe is
 The main goal is to make the game run seamlessly with no apparent issues. Also change the colors and theme.   
 Then if I have enough time, I also plan to add some neat features that don’t already exist in the code. 
 
+## How to Play
+Move the left paddle by 'w' for up and 's' for down. Move the right paddle by 'up' arrow and 'down' arrow
 ## Road Map
 
 * <p>[x] Create README.md</p>
