@@ -45,7 +45,7 @@ ball.dy = .2
 # Pen
 pen = turtle.Turtle()
 pen.speed(0)
-pen.color("white")
+pen.color("lime")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
