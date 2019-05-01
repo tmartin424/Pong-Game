@@ -3,6 +3,8 @@
 # 
 
 import turtle
+# Setting the Frames Per Second
+FPS = 60 
 
 wn = turtle.Screen()
 wn.title("Pong Game")
@@ -39,7 +41,7 @@ ball.shape("circle")
 ball.color("lime")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = .175
+ball.dx = .175  #speed change
 ball.dy = .175
 
 # Pen
@@ -54,22 +56,22 @@ pen.write("Player 1: 0  Player 2: 0", align="center", font=("Courier", 24, "norm
 # Function
 def paddle_a_up():
 	y = paddle_a.ycor()
-	y += 25
+	y += 22
 	paddle_a.sety(y)
 
 def paddle_a_down():
 	y = paddle_a.ycor()
-	y -= 25
+	y -= 22
 	paddle_a.sety(y)
 
 def paddle_b_up():
 	y = paddle_b.ycor()
-	y += 25
+	y += 22
 	paddle_b.sety(y)
 
 def paddle_b_down():
 	y = paddle_b.ycor()
-	y -= 25
+	y -= 22
 	paddle_b.sety(y)
 
 # Keyboard binding
