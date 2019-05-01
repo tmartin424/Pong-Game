@@ -1,11 +1,11 @@
-# Simple Pong in Python 3 for Beginners
-# By @kyleandjoe
-# Part 1: Getting Started
+# Playable Pong Game in Python 3 for Beginners
+# Pong Game
+# 
 
 import turtle
 
 wn = turtle.Screen()
-wn.title("Pong by @kyleandjoe")
+wn.title("Pong Game")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer(0)
@@ -18,7 +18,7 @@ score_b = 0
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
 paddle_a.shape("square")
-paddle_a.color("white")
+paddle_a.color("lime")
 paddle_a.shapesize(stretch_wid=5, stretch_len=1)
 paddle_a.penup()
 paddle_a.goto(-350, 0)
@@ -27,7 +27,7 @@ paddle_a.goto(-350, 0)
 paddle_b = turtle.Turtle()
 paddle_b.speed(0)
 paddle_b.shape("square")
-paddle_b.color("yellow")
+paddle_b.color("lime")
 paddle_b.shapesize(stretch_wid=5, stretch_len=1)
 paddle_b.penup()
 paddle_b.goto(350, 0)
@@ -36,11 +36,11 @@ paddle_b.goto(350, 0)
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape("circle")
-ball.color("white")
+ball.color("lime")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = 2
-ball.dy = -2
+ball.dx = .2
+ball.dy = .2
 
 # Pen
 pen = turtle.Turtle()
