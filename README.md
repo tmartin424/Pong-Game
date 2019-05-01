@@ -19,3 +19,4 @@ Move the left paddle by 'w' for up and 's' for down. Move the right paddle by 'u
 * <p>[ ] Fix the number of points to a winner is declared</p>
 
 ## License 
+https://github.com/ksu-is/Pong-Game/blob/master/LICENSE
